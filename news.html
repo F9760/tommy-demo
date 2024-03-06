@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css">
+  <title>新着情報│株式会社ネビュラインタラクティブ</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <span id="open_menu" class="material-symbols-outlined">
+        menu
+      </span>
+      <!-- <nav id="menu" class="shown"> -->
+      <nav id="menu">
+        <span id="close_menu" class="material-symbols-outlined">
+          close
+        </span>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="service.html">事業内容</a></li>
+          <li><a href="news.html">新着情報</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="recruit.html">採用案内</a></li>
+          <li><a href="inquiry.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      
+      <div class="row">
+        <div class="logo">
+          <h1>Nebula Interactive</h1>
+          <h2>Game console & Service Produce</h2>
+        </div>
+  
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="service.html">事業内容</a></li>
+          <li><a href="news.html">新着情報</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="recruit.html">採用案内</a></li>
+          <li><a href="inquiry.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="container">
+      <h1>NEW NEWS</h1>
+      <div class="home-1">
+        <p>最新情報一覧</p>
+      </div>
+      <p>株式会社ネビュラインタラクティブからのお知らせや最新情報をお届けします。</p>
+    </div>
+  </section>
+  
+  <footer>
+    © 株式会社ネビュラインタラクティブ<br>〒XXX-XXXX 東京都中央区銀座X-X-X エキスパートビル<br>TEL:XXX-XXX-XXXX
+  </footer>
+
+  <script>
+    (function () {
+
+      'use strict';
+
+      var openMenu = document.getElementById('open_menu');
+      var closeMenu = document.getElementById('close_menu');
+      var menu = document.getElementById('menu');
+
+      openMenu.addEventListener('click', function () {
+        menu.classList.add('shown');
+      });
+
+      closeMenu.addEventListener('click', function () {
+        menu.classList.remove('shown');
+      });
+
+    })();
+  </script>
+
+</body>
+
+</html>

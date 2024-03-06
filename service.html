@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css">
+  <title>事業内容│株式会社ネビュラインタラクティブ</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <span id="open_menu" class="material-symbols-outlined">
+        menu
+      </span>
+      <!-- <nav id="menu" class="shown"> -->
+      <nav id="menu">
+        <span id="close_menu" class="material-symbols-outlined">
+          close
+        </span>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="service.html">事業内容</a></li>
+          <li><a href="news.html">新着情報</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="recruit.html">採用案内</a></li>
+          <li><a href="inquiry.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+
+      <div class="row">
+        <div class="logo">
+          <h1>Nebula Interactive</h1>
+          <h2>Game console & Service Produce</h2>
+        </div>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="service.html">事業内容</a></li>
+          <li><a href="news.html">新着情報</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="recruit.html">採用案内</a></li>
+          <li><a href="inquiry.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="container">
+      <h1>OUR SERVICE</h1>
+      <div class="home-1">
+        <p>事業内容</p>
+      </div>
+      <p>株式会社ネビュラインタラクティブの事業内容をご紹介致します。</p>
+    </div>
+  </section>
+
+  <section class="service">
+    <div class="container">
+      <h1>SERVICE</h1>
+      <h2>事業内容</h2>
+      <span class="material-symbols-outlined">
+        stadia_controller
+      </span>
+      </span>
+      <h3>ゲームコンソール修理</h3>
+      <p>当社は、Nintendo Switch、プレイステーション、Xboxなど、あらゆる種類のゲームコンソールに対応しています。豊富な修理実績の専門スタッフが故障の症状、見積もり等その場でスムーズに対応致します。</p>
+      <span class="material-symbols-outlined">
+        currency_yen
+      </span>
+      <h3>ゲーム機買取</h3>
+      <p>使わなくなったゲーム機やソフトを高額買取！壊れていても買い取らせていただきます。眠っているゲーム機、是非お持ち下さい。</p>
+      <span class="material-symbols-outlined">
+        info
+      </span>
+      <h3>ゲームデータの救出と移行</h3>
+      <p>失われたゲームデータや破損したデータを専門のソフトウェアや技術を使用して復旧。セーブデータやゲームコレクションの移行などをサポートします。</p>
+    </div>
+  </section>
+
+  <section class="repair">
+    <div class="container">
+
+      <div class="row">
+        <div class="row-2">
+          <h1>GAME CONSOLE</h1>
+          <h2>ゲームコンソール修理</h2>
+          <!-- <div class="repair-1"> -->
+          <p>
+            銀座駅周辺に2店舗を構えております。豊富な修理実績を持つ熟練スタッフが常駐しており、故障の症状やお見積り等その場でスピーディーに対応させていただきます。<br>お客様の愛用するゲーム機を修理し、再び最高のパフォーマンスを発揮できるようサポートします。
+          </p>
+        </div>
+        <img src="game machine2.jpg" width="300px">
+      </div>
+    </div>
+  </section>
+
+  <section class="sale">
+    <div class="container">
+
+      <div class="row">
+        <div class="row-2">
+          <h1>PURCHASE & SALE</h1>
+          <h2>ゲーム機買取・販売</h2>
+          <p>
+            眠っているゲーム機やソフトはありませんか？弊社では使わなくなったゲーム機の高額買取を行っております。壊れている端末でも問題ございません。動かないからと諦める前に是非一度査定させて下さい！お問い合わせお待ち致しております。
+          </p>
+        </div>
+        <img src="game machine.jpg" width="300px">
+      </div>
+    </div>
+  </section>
+
+  <section class="recruit">
+    <div class="container">
+      <p>ご不明な点等はお気軽にお問い合わせ下さい!</p>
+      <button><a href="inquiry.html">お問い合わせはこちらから</a></button>
+    </div>
+  </section>
+
+  <footer>
+    © 株式会社ネビュラインタラクティブ<br>〒XXX-XXXX 東京都中央区銀座X-X-X エキスパートビル<br>TEL:XXX-XXX-XXXX
+  </footer>
+
+  <script>
+    (function () {
+
+      'use strict';
+
+      var openMenu = document.getElementById('open_menu');
+      var closeMenu = document.getElementById('close_menu');
+      var menu = document.getElementById('menu');
+
+      openMenu.addEventListener('click', function () {
+        menu.classList.add('shown');
+      });
+
+      closeMenu.addEventListener('click', function () {
+        menu.classList.remove('shown');
+      });
+
+    })();
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css">
+  <title>採用案内│株式会社ネビュラインタラクティブ</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <span id="open_menu" class="material-symbols-outlined">
+        menu
+      </span>
+      <!-- <nav id="menu" class="shown"> -->
+      <nav id="menu">
+        <span id="close_menu" class="material-symbols-outlined">
+          close
+        </span>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="service.html">事業内容</a></li>
+          <li><a href="news.html">新着情報</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="recruit.html">採用案内</a></li>
+          <li><a href="inquiry.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      
+      <div class="row">
+        <div class="logo">
+          <h1>Nebula Interactive</h1>
+          <h2>Game console & Service Produce</h2>
+        </div>
+  
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="service.html">事業内容</a></li>
+          <li><a href="news.html">新着情報</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="recruit.html">採用案内</a></li>
+          <li><a href="inquiry.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="container">
+      <h1>RECRUIT</h1>
+      <div class="home-1">
+        <p>採用案内</p>
+      </div>
+      <p>株式会社ミッドキャニオンでは、現在下記の職種にて募集をしております。</p>
+    </div>
+  </section>
+
+  <section class="requirements">
+    <div class="container">
+      <h1>REQUIREMENTS</h1>
+      <h2>募集要項</h2>
+      <table>
+        <tbody>
+          <tr><td class="item">雇用形態</td><td class="content">正社員・契約社員</td></tr>
+          <tr><td class="item">勤務地</td><td class="content">東京都中央区銀座</td></tr>
+          <tr><td class="item">勤務時間</td><td class="content">1日8時間（9:00～20:00でシフト制）</td></tr>
+          <tr><td class="item">休日</td><td class="content">週休2日制</td></tr>
+          <tr><td class="item">給与</td><td class="content">職種、スキルに応じて相談</td></tr>
+          <tr><td class="item">交通費</td><td class="content">社内規定により支給</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <button><a href="inquiry.html">応募する</a></button>
+  </section>
+
+  
+
+  <section class="recruit">
+    <div class="container">
+      <h1>採用情報 RECRUIT INFO</h1>
+      <p>ネビュラインタラクティブで働く仲間を募集しています！</p>
+    </div>
+  </section>
+  
+  <footer>
+    © 株式会社ネビュラインタラクティブ<br>〒XXX-XXXX 東京都中央区銀座X-X-X エキスパートビル<br>TEL:XXX-XXX-XXXX
+  </footer>
+
+  <script>
+    (function () {
+
+      'use strict';
+
+      var openMenu = document.getElementById('open_menu');
+      var closeMenu = document.getElementById('close_menu');
+      var menu = document.getElementById('menu');
+
+      openMenu.addEventListener('click', function () {
+        menu.classList.add('shown');
+      });
+
+      closeMenu.addEventListener('click', function () {
+        menu.classList.remove('shown');
+      });
+
+    })();
+  </script>
+
+</body>
+
+</html>

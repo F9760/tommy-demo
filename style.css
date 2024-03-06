@@ -1,0 +1,506 @@
+@charset "utf-8";
+
+/* 全体 */
+body {
+  margin: 0;
+  margin-top: 80px;
+  /* font-size: 16px; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  margin: 0;
+  color: var(--main-color);
+  font-size: 12px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #999;
+}
+
+button {
+  background: var(--main-color);
+  color: white;
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* 色 */
+:root {
+  --main-color: rgb(196, 166, 0);
+}
+
+
+/* ヘッダー */
+header {
+  background: #222;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 28px;
+  color: white;
+}
+
+header h2 {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+
+/* ヘッダーのメニュー */
+#open_menu {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0%;
+  font-size: 32px;
+  cursor: pointer;
+  color: #999;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 0 4px;
+  margin: auto 0;
+}
+
+#close_menu {
+  float: right;
+  font-size: 32px;
+  cursor: pointer;
+  color: #999;
+
+  padding: 15px;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: .8;
+  display: none;
+}
+
+#menu.shown {
+  display: block;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+#menu li {
+  line-height: 2;
+}
+
+#menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.row ul {
+  display: none;
+}
+
+
+
+
+
+/* メインの全体 */
+main h1 {
+  /* font-size: px; */
+  color: var(--main-color);
+}
+
+/* メインのホーム */
+.home {
+  background-image: url(home_back.jpg);
+
+  /* background: linear-gradient(to bottom,rgb(68, 32, 228), #222); */
+  background-size: cover;
+  padding: 32px 0;
+  position: relative;
+}
+
+.home {
+  position: relative;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);/ z-index: 1;
+}
+
+
+
+
+.home p {
+  font-size: 12px;
+  color: #999;
+  margin: 16px 0;
+}
+
+.home-1 p {
+  font-size: 26px;
+  color: white;
+}
+
+/* .home button {
+  background: orange;
+  color: white; 
+  border: 2px solid orange;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+} */
+
+/* メインのサービス */
+.service {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.service h1 {
+  /* font-size: 12px; */
+  color: var(--main-color);
+}
+
+.service h2 {
+  color: black;
+}
+
+.service h3 {
+  /* font-size: 18px; */
+  font-weight: normal;
+  color: black;
+}
+
+.service span {
+  color: var(--main-color);
+  font-weight: bold;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 24px;
+  margin: 32px 0;
+}
+
+
+/* メインの店舗情報 */
+.shop-info {
+  background: #eee;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.row-2 p {
+  margin: 32px 0;
+}
+
+.col>p {
+  background: var(--main-color);
+  color: white;
+  font-size: 12px;
+  width: 64px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.shops-1 {
+  display: flex;
+  margin: 4px 0;
+}
+
+.shops span {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.shops {
+  margin-top: 32px;
+}
+
+.shop img {
+  width: 100%;
+}
+
+
+/* メインの採用情報 */
+.recruit {
+  padding: 32px 0;
+  background: rgb(45, 43, 87);
+}
+
+.recruit p {
+  padding: 8px 0;
+  color: white;
+  font-size: 20px;
+}
+
+/* .recruit button {
+  background: orange;
+  color: white; 
+  border: 2px solid orange;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+} */
+
+
+/* メインの最新ニュース */
+.news {
+  padding: 32px 0;
+  text-align: center;
+}
+
+
+/* フッター */
+footer {
+  background: #222;
+  color: #999;
+  font-size: 12px;
+  padding: 32px 0;
+  text-align: center;
+}
+
+
+
+/* ★2ページ目以降 */
+/* サービスhtml */
+.repair {
+  padding: 32px 0;
+  background: #eee;
+}
+
+.sale {
+  padding: 32px 0;
+}
+
+.repair p {
+  margin: 16px 0;
+}
+
+.sale P {
+  margin: 16px 0;
+}
+
+.repair img {
+  width: 100%;
+}
+
+.sale img {
+  width: 100%;
+}
+
+/*会社概要html */
+.company {
+  padding: 32px 0;
+  text-align: center;
+}
+
+/* 表 */
+td {
+  border: 1px solid #999;
+  padding: 12px;
+  text-align: center;
+  font-size: 12px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 32px auto;
+}
+
+.item {
+  background: #eee;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+/* .table- {
+  text-align: center;
+} */
+
+/*採用案内html */
+.requirements {
+  padding: 32px 0;
+  text-align: center;
+}
+
+
+
+
+
+/* お問い合わせフォーム */
+form {
+  padding: 32px;
+  max-width: 400px;
+  margin: 32px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  width: 90%;
+  margin-bottom: 20px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/* PC版 */
+@media screen and (min-width:600px) {
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .row .row-2 {
+    width: 48%;
+  }
+
+  .row img {
+    width: 48%;
+  }
+
+
+  .shops {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 32px auto 0;
+  }
+
+
+}
+
+
+
+@media screen and (min-width:960px) {
+  .row ul {
+    display: flex;
+  }
+
+  .row ul li {
+    margin-left: 16px;
+    list-style: none;
+  }
+
+  #open_menu {
+    display: none;
+  }
+
+
+
+
+  /* 文字サイズ */
+  h1 {
+    font-size: 16px;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  header h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .home p {
+    font-size: 16px;
+  }
+
+  .home-1 p {
+    font-size: 32px;
+  }
+
+  .col>p {
+    font-size: 16px;
+  }
+
+  .recruit p {
+    font-size: 28px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+
+  /* 表 */
+  td {
+    padding: 18px;
+    font-size: 18px;
+  }
+}
